@@ -29,8 +29,8 @@ class CardAdapter(private val items: List<String>) :
 
         fun bindItem(item: String) {
             textViewNome.text = item
+            val doença = "O câncer é uma doença não-contagiosa que provoca o crescimento descontrolado de algumas células, e pode acontecer em qualquer parte do corpo. Não é resultado de remédios, quedas ou algum alimento que pode ter feito mal. O câncer é uma doença não-contagiosa que provoca o crescimento descontrolado de algumas células, e pode acontecer em qualquer parte do corpo. Não é resultado de remédios, quedas ou algum alimento que pode ter feito mal. O câncer é uma doença não-contagiosa que provoca o crescimento descontrolado de algumas células, e pode acontecer em qualquer parte do corpo. Não é resultado de remédios, quedas ou algum alimento que pode ter feito mal."
 
-            val doença = "O câncer é uma doença que provoca o crescimento descontrolado de algumas células, podendo acontecer em qualquer parte do corpo."
 
             val lista = mutableListOf(
                 "A Doença",
@@ -44,7 +44,10 @@ class CardAdapter(private val items: List<String>) :
                 "Alimentação",
             )
 
-            val items = listOf(lista[0] to doença, lista[1] to "texto sobre tratamento", lista[2] to "Texto sobre quimioterapia")
+            val items = listOf(
+                lista[0] to doença,
+                lista[1] to "texto sobre tratamento",
+                lista[2] to "Texto sobre quimioterapia")
 
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, CardContent::class.java)
