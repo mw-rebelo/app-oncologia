@@ -16,6 +16,6 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:fontFamily="@font/readex_pro_medium"
-        />
+        android:fontFamily="@font/readex_pro_medium"/>
+
 </LinearLayout>
